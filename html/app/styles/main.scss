@@ -2,6 +2,29 @@
 @import 'components/components';
 @import 'components/fonts';
 
+ul,
+ol,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+p {
+  padding: 0;
+  margin: 0 0 18px;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+td, tr {
+  padding: 0;
+  margin: 0;
+}
+
+ul li::before {
+  display: none;
+}
 
 html,
 body {
@@ -33,8 +56,11 @@ header {
   width: 1040px;
   margin: 0 auto;
   padding: 0 24px;
+  background-color: #fff;
 }
 .header-top {
+  width: 1040px;
+  margin: 0 -24px 0 -24px;
   height: 33px;
   padding: 5px 0;
   border: 1px solid #b3c5d2;
@@ -46,10 +72,10 @@ header {
   form {
     @extend .clearfix;
     float: left;
-    width: 575px;
-    margin: 0 25px;
+    width: 510px;
+    margin: 0 10px 0 25px;
     display: inline-block;
-    padding: 0 10px 0 265px;
+    padding: 0 10px 0 200px;
     height: 23px;
     background-image: url(../images/bg/squre-border.png);
     background-repeat: repeat-y;
@@ -88,6 +114,7 @@ header {
       background: -webkit-linear-gradient(#feffff, #d1dee7);
       background: -o-linear-gradient(#feffff, #d1dee7);
       background: linear-gradient(#feffff, #d1dee7);
+      transition: all 0.5s; 
       &:hover {
         background-color: #e6edf2;
         background: -webkit-linear-gradient(#d1dee7, #fcfdfd);
@@ -98,23 +125,199 @@ header {
   }
   ul {
     display: inline-block;
-    float: left;
-    width: 430px;
+    float: right;
+    width: 465px;
+    height: 23px;
     padding: 0 0 0 15px;
     margin: 0 25px 0 0;
     background-image: url(../images/bg/squre-border.png);
     background-repeat: repeat-y;
     background-position: left;
-    
+    position: relative;
+    top: -2px;
     li {
       display: inline-block;
-      padding: 0 0 0 50px;
-      width: 33%;
-      list-style-type: none;
+      padding: 0 16px 0 30px;
+      float: left;
+      width: 135px;
+      height: 23px;
+      font-size: 13px;
+      font-weight: 500;
+      list-style: none;
+      background-repeat: no-repeat;
+      background-position: 5px center;
+      a {
+        color: #016bbd;
+        margin: 0 15px 0 0;
+        position: relative;
+        top: -5px;
+        transition: all 0.3s;
+        &:hover {
+          color: #666666;
+        }
+      }
+      &:after {
+        content: '';
+        display: inline-block;
+        background-image: url(../images/bg/squre-border.png);
+        background-repeat: repeat-y;
+        background-position: left;
+        width: 2px;
+        height: 23px;
+      }
+    }
+    .list-1 {
+      background-image: url(../images/icons/ico-about.png);
+      &:hover {
+        background-image: url(../images/icons/ico-about-hover.png);
+      }
+    }
+    .list-2 {
+      background-image: url(../images/icons/ico-contact.png);
+      &:hover {
+        background-image: url(../images/icons/ico-contact-hover.png);
+      }
+    }
+    .list-3 {
+      width: 170px;
+      padding: 0 0 0 35px;
+      background-image: url(../images/icons/ico-delivery.png);
+      a {
+        top: -1px;
+      }
+      &:hover {
+        background-image: url(../images/icons/ico-delivery-hover.png);
+      }
+      &:after {
+        display: none;
+      }
+    }
+    &:after {
+      content: '';
+      display: inline-block;
+      background-image: url(../images/bg/squre-border.png);
+      background-repeat: repeat-y;
+      background-position: left;
+      width: 2px;
+      height: 23px;
     }
   }
 }
-
+.header-main {
+  padding: 24px 0;
+  height: 130px;
+  @extend .clearfix;
+  .logogblock {
+    width: 220px;
+    height: 100%;
+    display: inline-block;
+    float: left;
+  }
+  .logo {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+    color: #009fcb;
+    text-transform: uppercase;
+    span {
+      color: #c4188a;
+    }
+  }
+  .description {
+    display: block;
+    background-color: #e4ecf1;
+    text-shadow: 0.5px 0.866px 0px rgb( 244, 248, 250 );
+    padding: 3px 0;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #616d75;
+    text-align: center;
+  }
+  .changecity {
+    display: inline-block;
+    width: 200px;
+    padding: 15px 0 0 40px;
+    height: 100%;
+    float: left;
+    text-align: left;
+    background-image: url(../images/icons/ico-marker.png);
+    background-repeat: no-repeat;
+    background-position: 8px center;
+    font-size: 13px;
+    font-weight: 500;
+    color: #788289;
+    ul {
+      color: #026cbd;
+      line-height: 1;
+      li {
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        color: #026cbd;
+        text-decoration: none;
+        border-bottom: 1px dotted #026cbd;
+      }
+    }
+  }
+  .phone {
+    width: 210px;
+    height: 100%;
+    display: inline-block;
+    float: left;
+    padding: 30px 5px 0 0;
+    text-align: center;
+    text-decoration: none;
+    color: #333333;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 500;
+    background-image: url(../images/icons/ico-phone.png);
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    span {
+      color: #788289;
+    }
+  }
+  .worktime {
+    width: 180px;
+    height: 100%;
+    float: left;
+    display: inline-block;
+    background-image: url(../images/icons/ico-watch.png);
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    padding: 25px 0 0 40px;
+    line-height: 1.2;
+    span {
+      display: block;
+    }
+  }
+  .shopping-cart {
+    width: 180px;
+    height: 80px;
+    border: 1px solid #ecf2f5;
+    border-radius: 4px;
+    display: inline-block;
+    height: 100%;
+    float: right;
+    h6 {
+      background-color: #c01384;
+      background-image: url(../images/icons/ico-quart.png);
+      background-repeat: no-repeat;
+      background-position: 10px center;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 4px 4px 0 0;
+      padding: 0 0 0 40px;
+      text-shadow: 0px -1px 0px rgb( 130, 0, 74 );
+      color: #fff;
+    }
+    table {
+      width: 100%;
+    }
+  }
+}
 
 
 

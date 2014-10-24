@@ -90,6 +90,7 @@ gulp.task('styles', function () {
     .pipe($.changed('styles', {extension: '.scss'}))
     .pipe($.rubySass({
         style: 'expanded',
+        sourcemap: true,
         precision: 10
       })
       .on('error', console.error.bind(console))
