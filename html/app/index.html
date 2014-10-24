@@ -3,9 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Web Starter Kit</title>
+    <title> </title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -21,46 +20,236 @@
     <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
     <meta name="msapplication-TileColor" content="#3372DF">
 
-    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-    <!--
-    <link rel="canonical" href="http://www.example.com/">
-    -->
-
     <!-- Page styles -->
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
-    <header class="app-bar promote-layer">
-      <div class="app-bar-container">
-        <button class="menu"><img src="images/hamburger.svg" alt="Menu"></button>
-        <h1 class="logo">Web <strong>Starter Kit</strong></h1>
-        <section class="app-bar-actions">
-        <!-- Put App Bar Buttons Here -->
-        <!-- e.g <button><i class="icon icon-star"></i></button> -->
-        </section>
-      </div>
+
+    <header>
+      <div class="header-top clearfix">
+        <form action="">
+          <input type="text" name="search" placeholder="Введите текст для поиска">
+          <input type="submit" value="искать">
+        </form>
+        <ul class="clearfix">
+          <li class="list-1"><a href="">О магазине</a></li>
+          <li class="list-2"><a href="">Контакты</a></li>
+          <li class="list-3"><a href="">Доставка и оплата</a></li>
+        </ul>
+      </div><!-- top-header -->
+      <div class="header-main">
+        <h4 class="logo">Doma<span>mio</span></h4>
+        <span class="description">Шторы и домашний текстиль</span>
+        <nav class="changecity">
+          <span>Ваш регион:</span>
+          <ul>
+            <li><a href="#">Санкт-Петербург</a></li>
+          </ul>
+        </nav>
+        <a href="+74952560877" class="phone"><span>+7 (495)</span> 256-08-77</a>
+        <p class="worktime"><span>Время работы:</span>10.00-19.00</p>
+        <div class="shopping-cart">
+          <h6>Корзина</h6>
+          <table>
+            <tr>
+              <td>Товаров</td>
+              <td>Сумма</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>47 568.00 руб.</td>
+            </tr>
+          </table>
+        </div><!-- shopping-cart -->
+      </div><!-- header-main -->
     </header>
 
-    <nav class="navdrawer-container promote-layer">
-      <h4>Navigation</h4>
+    <nav class="main-nav">
       <ul>
-        <li><a href="#hello">Hello</a></li>
-        <li><a href="#get-started">Get Started</a></li>
-        <li><a href="styleguide.html">Style Guide</a></li>
+        <li><a href="#hello">Комплекты штор</a></li>
+        <li><a href="#get-started">Портьеры</a></li>
+        <li><a href="styleguide.html">Тюль, вуаль</a></li>
+        <li><a href="styleguide.html">Фотошторы</a></li>
+        <li><a href="styleguide.html">Постельное белье</a></li>
+        <li><a href="styleguide.html">Домашний текстиль</a></li>
+        <li><a href="styleguide.html">Декоративные подушки</a></li>
       </ul>
-    </nav>
+    </nav><!-- main-nav -->
 
     <main>
-      <h1 id="hello">Hello!</h1>
-      <p>Welcome to Web Starter Kit.</p>
+      <aside class="slide-box slide-box-home">
+        <div class="slide-inner">
+          <img src="images/content/slide-image.jpg" alt="">
+          <h6>Постельное белье</h6>
+          <span>из натуральных тканей на любой вкус</span>
+          <p>У нас большой выбор готовых штор, покрывал, скатертей и текстиля европейского качества</p>
+          <ul>
+            <li>Постельное белье</li>
+            <li>Домашний текстиль</li>
+            <li>Пекоративные подушки</li>
+          </ul>
+        </div>
+      </aside><!-- slide-box slide-box-home -->
 
-      <h2 id="get-started">Get Started.</h2>
-      <p>Read how to <a href="http://developers.google.com/web/starter-kit">Get Started</a> or check out the <a href="styleguide.html">Style Guide</a>.</p>
+      <article class="full-width home-block-first clearfix">
+        <img src="images/content/content-1.jpg" class="featureimg featureimg-left" alt="">
+        <h3 class="block-title">Предлагаем огромный выбор комплектов штор</h3>
+        <p>Интернет-магазин предлагаем вашему вниманию огромный выбор комплектов штор, тюля, вуали, портьер </p><p>европейского производства, а также рулонные и римские шторы, жалюзи. Удобный онлайн-каталог позволит быстро подобрать нужный вариант благодаря возможности сортировки товара по стоимости, способу крепления и расцветке, а квалифицированные консультанты ответят на любой возникший вопрос. </p>
+        <p>Кроме того, наш интернет-магазин «ТомДом» регулярно пополняет свой ассортимент и своевременно обновляет каталог. Сроки оформления заказа и заказа составляют всего 1-2 дня: это обусловлено тем, что весь товар из каталога, включая готовые шторы, находится на нашем складе, поэтому купить шторы в Москве можно быстро и без </p>
+      </article><!-- full-width home-block-first -->
+
+      <section class="full-width home-block-second">
+        <article>
+          <img src="images/content/product-prev-1.jpg" alt="">
+          <a href="">Финансовый центр</a>
+          <p>Портьера 200х260 см.— 2 шт.,<br>органза 450х260см.— 1 шт.</p>
+          <span class="price">17 570 руб.</span>
+          <button class="buy"></button>
+          <span class="status-new"></span>
+        </article>
+        <article>
+          <img src="images/content/product-prev-2.jpg" alt="">
+          <a href="">Лудет (золото)</a>
+          <p>Портьера 200х260 см.— 2 шт.,<br>органза 450х260см.— 1 шт.</p>
+          <span class="price">27 570 руб.</span>
+          <button class="buy"></button>
+          <span class="status-sale"></span>
+        </article>
+        <article>
+          <img src="images/content/product-prev-3.jpg" alt="">
+          <a href="">Лудет (золото)</a>
+          <p>Портьера 200х260 см.— 2 шт.,<br>органза 450х260см.— 1 шт.</p>
+          <span class="price">12 570 руб.</span>
+          <button class="buy"></button>
+        </article>
+        <article>
+          <img src="images/content/product-prev-4.jpg" alt="">
+          <a href="">Дикли (шоколад/молоко)</a>
+          <p>Портьера 200х260 см.— 2 шт.,<br>органза 450х260см.— 1 шт.</p>
+          <span class="price">9 570 руб.</span>
+          <button class="buy"></button>
+        </article>
+        <article>
+          <img src="images/content/product-prev-5.jpg" alt="">
+          <a href="">Финансовый центр</a>
+          <p>Портьера 200х260 см.— 2 шт.,<br>органза 450х260см.— 1 шт.</p>
+          <span class="price">7 570 руб.</span>
+          <button class="buy"></button>
+        </article>
+      </section><!-- full-width home-block-second -->
+
+      <article class="full-width home-block-third clearfix">
+        <img src="images/content/content-2.jpg" alt="">
+        <h3 class="block-title">Интернет магазин готовых штор</h3>
+        <p>Без занавесок не обходится ни один интерьер, будь то комната в квартире, загородном доме, или номер в отеле. Красивые шторы могут быть как тяжелые, так и легкие, выдержанные в строгом стиле или украшенные различным декором, разноцветные или однотонные. Выбор настолько огромен, что растеряться при виде всего великолепия не так уж и сложно. Нередко покупатели задаются вопросом: «Где купить шторы недорого?»</p>
+        <p>Ответ очевиден: лучшее соотношение цены и качества предоставляет интернет магазин штор «ТомДом».</p>
+        <p>Чаще всего окна в гостиной драпируют по принципу «одно полотно тюли и две порьтеры». Такое сочетание является классикой. Если Вы сомневаетесь в том, что сможете грамотно подобрать занавеси разных типов, доверьте это профессионалу и закажите их у нас.</p>
+      </article><!-- full-width home-block-third -->
+
+      <section class="full-width home-block-fourth">
+        <article>
+          <img src="images/content/product-prev-1.jpg" alt="">
+          <a href="">Финансовый центр</a>
+          <p>Портьера 200х260 см.— 2 шт.,<br>органза 450х260см.— 1 шт.</p>
+          <span class="price">17 570 руб.</span>
+          <button class="buy"></button>
+          <span class="status-new"></span>
+        </article>
+        <article>
+          <img src="images/content/product-prev-2.jpg" alt="">
+          <a href="">Лудет (золото)</a>
+          <p>Портьера 200х260 см.— 2 шт.,<br>органза 450х260см.— 1 шт.</p>
+          <span class="price">27 570 руб.</span>
+          <button class="buy"></button>
+          <span class="status-sale"></span>
+        </article>
+        <article>
+          <img src="images/content/product-prev-3.jpg" alt="">
+          <a href="">Лудет (золото)</a>
+          <p>Портьера 200х260 см.— 2 шт.,<br>органза 450х260см.— 1 шт.</p>
+          <span class="price">12 570 руб.</span>
+          <button class="buy"></button>
+        </article>
+        <article>
+          <img src="images/content/product-prev-4.jpg" alt="">
+          <a href="">Дикли (шоколад/молоко)</a>
+          <p>Портьера 200х260 см.— 2 шт.,<br>органза 450х260см.— 1 шт.</p>
+          <span class="price">9 570 руб.</span>
+          <button class="buy"></button>
+        </article>
+        <article>
+          <img src="images/content/product-prev-5.jpg" alt="">
+          <a href="">Финансовый центр</a>
+          <p>Портьера 200х260 см.— 2 шт.,<br>органза 450х260см.— 1 шт.</p>
+          <span class="price">7 570 руб.</span>
+          <button class="buy"></button>
+        </article>
+      </section><!-- full-width home-block-fourth -->
+
+      <section class="full-width home-block-fifth">
+        <article class="clearfix">
+          <img src="images/content/content-3.jpg" alt="">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates possimus eveniet eum consectetur atque, fuga voluptatibus hic vitae impedit ducimus beatae sint necessitatibus provident, doloremque similique aperiam reiciendis ipsam enim?</p>
+        </article>
+        <article class="clearfix">
+          <img src="images/content/content-4.jpg" alt="">
+          <p>Doloribus nostrum reprehenderit et reiciendis unde placeat velit fugit dolores eos sequi. Eveniet et laboriosam ad ex in architecto possimus quidem suscipit distinctio, tenetur. Commodi sunt accusamus dolorum ullam voluptatibus!</p>
+        </article>
+        <article class="clearfix">
+          <img src="images/content/content-5.jpg" alt="">
+          <p>Architecto mollitia dolorem veniam iste alias maxime, illum at dicta, ducimus harum necessitatibus nostrum est atque facilis ratione ipsa modi. Non accusantium molestias saepe mollitia praesentium ullam quod perspiciatis incidunt.</p>
+        </article>
+        <article class="clearfix">
+          <img src="images/content/content-6.jpg" alt="">
+          <p>Autem repudiandae, ea, sequi quas facere quisquam quaerat libero dolorum sunt non et totam numquam eius in inventore magni saepe cupiditate! Cumque tenetur nulla quidem temporibus, adipisci dolores perferendis est.</p>
+        </article>
+      </section><!-- full-width home-block-fifth -->
+
+      <section class="full-width home-block-sixth">
+        <div class="fourth-of-five">
+          <h6>title</h6>
+          <article>
+            <img src="images/content/small-content-1.jpg" alt="">
+            <a href="" class="small-title">name</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ipsum obcaecati, voluptatem vel aperiam deserunt alias illum magnam, eaque excepturi! Debitis, quas. Corporis adipisci excepturi quas officia voluptates ducimus, rerum.</p>
+          </article>
+          <article>
+            <img src="images/content/small-content-2.jpg" alt="">
+            <a href="" class="small-title">name</a>
+            <p>Blanditiis maiores modi magni ea! Nam, ea officia quasi nostrum officiis sunt maiores perspiciatis reprehenderit numquam magnam quidem mollitia blanditiis, doloremque, praesentium est ad? Quaerat unde, laudantium! Tempore, quis nam.</p>
+          </article>
+          <article>
+            <img src="images/content/small-content-3.jpg" alt="">
+            <a href="" class="small-title">name</a>
+            <p>Suscipit quisquam consequuntur quo nobis incidunt ratione necessitatibus itaque libero, quibusdam aliquam. Iure quidem commodi natus, deserunt nihil exercitationem voluptatem assumenda veniam explicabo libero, tempore, mollitia nobis illo officia! Inventore.</p>
+          </article>
+          <article>
+            <img src="images/content/small-content-4.jpg" alt="">
+            <a href="" class="small-title">name</a>
+            <p>Tenetur ut explicabo suscipit, accusamus vitae adipisci. Deleniti sit voluptates voluptate nesciunt assumenda architecto praesentium numquam, ratione doloremque at animi, molestiae facere, aspernatur inventore iste quia illo, expedita odio! Officiis.</p>
+          </article>
+        </div>
+        <aside class="one-of-five">
+          <h6>title</h6>
+          <ul>
+            <li>name</li>
+            <li>name</li>
+            <li>name</li>
+            <li>name</li>
+            <li>name</li>
+            <li>name</li>
+            <li>name</li>
+            <li>name</li>
+            <li>name</li>
+            <li>name</li>
+          </ul>
+        </aside>
+      </section><!-- full-width home-block-sixth -->
+
     </main>
 
     <!-- build:js scripts/main.min.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
-
   </body>
 </html>

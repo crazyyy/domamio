@@ -5,7 +5,8 @@
 **/
 
 
-.clear {
+.clear,
+.clearfix {
   &::before,
   &::after {
     content: '';
